@@ -1,0 +1,6 @@
+Flask==2.0.1
+inflection==0.5.1
+numpy == 1.19.2
+pandas ==1.2.2
+pickleshare == 0.7.5
+requests == 2.25.1
