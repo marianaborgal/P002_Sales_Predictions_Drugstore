@@ -1,26 +1,30 @@
 # P002_Sales_Predictions_Drugstore
-<br><br>
 **_This is a ongoing project._** <br><br>
-Sales Predictions from Rossmann Drugstores. 
-<!-- ![home](https://user-images.githubusercontent.com/77681284/117519523-439a7900-af7a-11eb-8cf0-4900c78737e4.png) 
+Sales prediction from a pharmacy chain.
 
-This repository contains codes for the sales predictions for Rossman drugstores. <br>-->
-All information below are fictional.
+![home](https://www.gsmmaniak.pl/wp-content/uploads/gsmmaniak/2019/03/rossmann-wypuscil-promocje-w-black-friday-ale-mocno-sie-przeliczyl-rozwscieczeni-klienci-skladaja-skargi-zwykle-zlodziejstwo-2389046.jpg) 
+
+This repository contains codes for the sales predictions for Rossman drugstores. <br>
+The data used was available on [Kaggle](https://www.kaggle.com/c/rossmann-store-sales).
 
 #### Project 002 - Sales Predictions:
 The objetives of this project are:
-<!--* Perform exploratory data analysis on properties available on dataset.
-* Determine which properties should be bouth according to business criteria.
-* Develop a online dashboard that can be acessed by the CEO from a mobile or computer.-->
+* Perform exploratory data analysis on sales available on dataset.
+* Predict the sales for the next 6 weeks from each store of the pharmacy chain.
+* Develop a online dashboard that can be acessed by the CEO from a mobile or computer.
+* Develop a telegram bot that can be acessed by the CEO from a mobile or computer
 
 ---
 ## 1. Business Problem
-<!--House Rocket business model consists of purchasing and reselling properties through a digital platform. The data scientist is in charge to develop a online dashboard so that the company's CEO can have an overview of properties available to became part of House Rocket portfolio in King County (USA).<br>
+<!--Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied.<br>-->
 <br>The dashboard must contain:
    * Which properties the company should buy.
    * A map view with properties available.
    * A table view with attributes filters.
-   * Expected profit of each property.-->
+   * Expected sales of each store.
+
+<br>The telegram must return:
+   * The sales for the next 6 months for the given store.
 
 ## 2. Business Results
 <!--Based on business criteria, from 21,436 available properties, 10,707 should be bought by House Rocket and could result on a US$1,249,116,423.00 profit. <br>
