@@ -1,6 +1,6 @@
-# P002_Sales_Predictions_Drugstore
+# P002 Sales Predictions for a Drugstore Chain
 **_This is a ongoing project._** <br><br>
-Sales prediction from a pharmacy chain.
+Sales prediction for a drugstore chain.
 
 ![home](https://www.gsmmaniak.pl/wp-content/uploads/gsmmaniak/2019/03/rossmann-wypuscil-promocje-w-black-friday-ale-mocno-sie-przeliczyl-rozwscieczeni-klienci-skladaja-skargi-zwykle-zlodziejstwo-2389046.jpg) 
 
@@ -12,10 +12,11 @@ The objetives of this project are:
 * Perform exploratory data analysis on sales available on dataset.
 * Predict the sales for the next 6 weeks from each store of the pharmacy chain.
 * Develop a online dashboard that can be acessed by the CEO from a mobile or computer.
-* Develop a telegram bot that can be acessed by the CEO from a mobile or computer
+* Develop a telegram bot that can be acessed by the CEO from a mobile or computer.
 
 ---
 ## 1. Business Problem
+Rossmann is a pharmacy chain that operates over 3,000 stores in 7 European countries. The CFO requested store managers to report the sales figure for the next 6 weeks. This demand
 <!--Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied.<br>-->
 <br>The dashboard must contain:
    * Which properties the company should buy.
