@@ -17,19 +17,19 @@ The objetives of this project are:
 ---
 ## 1. Business Problem
 Rossmann is a pharmacy chain that operates over 3,000 stores in 7 European countries. The stores are going to be renovated and the CFO needs to know how much can be invested in each one of them. Therefore, the Data Scientist was requested to develop a sales prediction model that  forecast the sales for the next 6 weeks for each store.
-<!--- Marco: This forecast also informs the CEO which store is able to account for its own restoration with the income within this period. --->
+<!-- Marco: This forecast also informs the CEO which store is able to account for its own restoration with the income within this period. -->
 
 <br>The telegram bot must return:
    * The sales for the next 6 months for the given store.
 
 ## 2. Business Results
 <br>
-<!--Based on business criteria, from 21,436 available properties, 10,707 should be bought by House Rocket and could result on a US$1,249,116,423.00 profit. <br>
+Based on business criteria, from 21,436 available properties, 10,707 should be bought by House Rocket and could result on a US$1,249,116,423.00 profit. <br>
 Maximum Value Invested: US$4,163,721,410.00<br>
 Maximum Value Returned: US$5,412,837,833.00<br>
 Maximum Expected Profit: US$1,249,116,423.00<br>
 
-This results on a 30.0 % gross revenue.-->
+This results on a 30.0 % gross revenue.
 
 ## 3. Business Assumptions
 * The data available is only from XX to XX.
@@ -60,7 +60,7 @@ Variable | Definition
 * Business criteria to determine wether a property should be bought are:
    * Property must have a 'condition' equals or bigger than 3.
    * Property price must be below or equal the median price on the region (zipcode)
--->
+
 <br>
 
 ## 4. Solution Strategy
