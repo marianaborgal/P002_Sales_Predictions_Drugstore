@@ -1,6 +1,6 @@
-# P002_Sales_Predictions_Drugstore
+# P002 Sales Predictions for a Drugstore Chain
 **_This is a ongoing project._** <br><br>
-Sales prediction from a pharmacy chain.
+Sales prediction for a drugstore chain.
 
 ![home](https://www.gsmmaniak.pl/wp-content/uploads/gsmmaniak/2019/03/rossmann-wypuscil-promocje-w-black-friday-ale-mocno-sie-przeliczyl-rozwscieczeni-klienci-skladaja-skargi-zwykle-zlodziejstwo-2389046.jpg) 
 
@@ -12,111 +12,78 @@ The objetives of this project are:
 * Perform exploratory data analysis on sales available on dataset.
 * Predict the sales for the next 6 weeks from each store of the pharmacy chain.
 * Develop a online dashboard that can be acessed by the CEO from a mobile or computer.
-* Develop a telegram bot that can be acessed by the CEO from a mobile or computer
+* Develop a telegram bot that can be acessed by the CEO from a mobile or computer.
 
 ---
 ## 1. Business Problem
-<!--Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied.<br>-->
-<br>The dashboard must contain:
-   * Which properties the company should buy.
-   * A map view with properties available.
-   * A table view with attributes filters.
-   * Expected sales of each store.
+Rossmann is a pharmacy chain that operates over 3,000 stores in 7 European countries. The stores are going to be renovated and the CFO needs to know how much can be invested in each one of them. Therefore, the Data Scientist was requested to develop a sales prediction model that  forecast the sales for the next 6 weeks for each store.
+<!-- Marco: This forecast also informs the CEO which store is able to account for its own restoration with the income within this period. -->
 
-<br>The telegram must return:
-   * The sales for the next 6 months for the given store.
+<br>The telegram bot must return:
+   * The sales for the next 6 weeks for the given store.<br>
 
 ## 2. Business Results
-<!--Based on business criteria, from 21,436 available properties, 10,707 should be bought by House Rocket and could result on a US$1,249,116,423.00 profit. <br>
-Maximum Value Invested: US$4,163,721,410.00<br>
-Maximum Value Returned: US$5,412,837,833.00<br>
-Maximum Expected Profit: US$1,249,116,423.00<br>
-
-This results on a 30.0 % gross revenue.-->
+<br>
+<br>
 
 ## 3. Business Assumptions
-<!--* The data available is only from May 2014 to May 2015.
-* Properties with bedrooms disproportional with interior living squarefoot were deleted, assuming it was a input error.
-* Seasons of the year:<br>
-   * Spring starts on March 21st<br>
-   * Summer starts on June 21st<br>
-   * Fall starts on September 23rd<br>
-   * Winter starts on December 21d<br> -->
-
+* The data available is only from XX to XX.
 * The variables on original dataset goes as follows:<br>
-<!--
+
 Variable | Definition
 ------------ | -------------
-|id | Unique ID for each property available|
-|date | Date that the property was available|
-|price | Sale price of each property |
-|bedrooms | Number of bedrooms|
-|bathrooms | Number of bathrooms, where .5 accounts for a room with a toilet but no shower, and .75 or ¾ bath is a bathroom that contains one sink, one toilet and either a shower or a bath.|
-|sqft_living | Square footage of the apartments interior living space|
-|sqft_lot | Square footage of the land space|
-|floors | Number of floors|
-|waterfront | A dummy variable for whether the apartment was overlooking the waterfront or not|
-|view | An index from 0 to 4 of how good the view of the property was|
-|condition | An index from 1 to 5 on the condition of the apartment|
-|grade | An index from 1 to 13, where 1-3 falls short of building construction and design, 7 has an average level of construction and design, and 11-13 have a high quality level of construction and design.|
-|sqft_above | The square footage of the interior housing space that is above ground level|
-|sqft_basement | The square footage of the interior housing space that is below ground level|
-|yr_built | The year the property was initially built|
-|yr_renovated | The year of the property’s last renovation|
-|zipcode | What zipcode area the property is in|
-|lat | Lattitude|
-|long | Longitude|
-|sqft_living15 | The square footage of interior housing living space for the nearest 15 neighbors|
-|sqft_lot15 | The square footage of the land lots of the nearest 15 neighbors|
+|store | unique ID for each store|
+|days_of_week | |
+|date | date that the sales occurred|
+|sales | number of sales |
+|customers | number of customers |
+|open | wether the store was open (1) or closed (0)|
+|promo | wether the store was participating on a promotion (1) or not (0)|
+|sate_holiday | whether it was a state holiday (a=public holiday, b=easter holiday, c=christmas) or not (0) |
+|store_type | designates the store model as a, b, c or d. |
+|assortment | indicates the store assorment as: a=basic, b=extra, c=extended|
+|competition_distance | distance in meters to the nearest competitor store |
+|competition_open_since_month | the approximate month competitor was opened|
+|competition_open_since_year | the approximate year competitor was opened|
+|promo2 | wheter the store was participating on a consecutive promotion (1) or not (0)|
+|promo2_since_week | indicates the calendar week the store was participating in promo2|
+|promo2_since_year | indicates the year the store was participating in promo2|
+|promo_interval | indicates the intervals in which promo2 started|
 
 * Variables created during the project development goes as follow:
 
 Variable | Definition
 ------------ | -------------
-| decision | wether a property should be bought |
-| median_price_zipcode | median price of zipcode region |
-| selling_price_suggestion | 30% more on buying price, if property should be bought |
-| expected_profit | difference between buying price and selling price suggestion  |
-| dist_fromlake | distance from the center of Evergreen Point Floating Bridge |
-| season | season property became available |
-| med_autumn | median price from properties available during autumn  |
-| med_spring | median price from properties available during spring |
-| med_summer | median price from properties available during summer |
-| med_winter | median price from properties available during winter |
-| season_to_sell | in which season property should be sold |
+| x | xxx |
 
-* Business criteria to determine wether a property should be bought are:
-   * Property must have a 'condition' equals or bigger than 3.
-   * Property price must be below or equal the median price on the region (zipcode)
--->
+
 <br>
 
 ## 4. Solution Strategy
-1. Understanding the business model
-2. Understanding the business problem
-3. Collecting the data
-4. Data Description
-5. Data Filtering
-6. Exploratory Data Analysis
-7. Data Preparation
-8. Feature Selection
-_ongoing_
-<!--
-8. Exploratory Data Analysis
-9. Insights Conclusion
-10. Dashboard deploy on [Heroku](https://p001-realstate-insights.herokuapp.com/)-->
-
+1. Data Description
+2. Feature Engineering
+3. Data Filtering
+4. Exploratory Data Analysis
+5. Data Preparation
+6. Feature Selection
+7. Machine Learning Modeling
+8. Hyper Parameter Fine Tuning
+9. Model-to-Business Interpretation
+10. Model Deploy
+<br>_ongoing_<br>
 
 ## 5. Top 4 Data Insights
-<!--1. Properties built with basements decreased after the 80s
+<!-- 1. Properties built with basements decreased after the 80s
 2. Almost 60% of the properties became available during summer/spring.
 3. 50% of properties that should be bought are in a 15km radius from the lake.
-4. Properties selected to be bought in a 15km radius from lake correspond to 60% of expected profit.-->
+4. Properties selected to be bought in a 15km radius from lake correspond to 60% of expected profit. -->
 
 ## 6. Conclusion
-<!--The objective of this project was to create a online dashboard to House Rocket's CEO. Deploying the dashboard on Heroku platforms provided the CEO acess from anywhere facilitating data visualization and business decisions.-->
+<!-- The objective of this project was to create a online dashboard to House Rocket's CEO. Deploying the dashboard on Heroku platforms provided the CEO acess from anywhere facilitating data visualization and business decisions. -->
 
-## 7. Next Steps
+## 7. Lessons Learned
+
+## 8. Next Steps
 <!--* Determine which season of the year would be the best to execute a sale.
 * Get more address data to fill NAs.
 * Expand this methodology to other regions that House Rocket operates.-->
@@ -124,8 +91,11 @@ _ongoing_
 
 ----
 **References:**
-<!--* Python from Zero to DS lessons on [Youtube](https://www.youtube.com/watch?v=1xXK_z9M6yk&list=PLZlkyCIi8bMprZgBsFopRQMG_Kj1IA1WG&ab_channel=SejaUmDataScientist)
-* Blog [Seja um Data Scientist](https://sejaumdatascientist.com/os-5-projetos-de-data-science-que-fara-o-recrutador-olhar-para-voce/)
-* Dataset House Sales in King County (USA) from [Kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction)
-* Variables meaning on [Kaggle discussion](https://www.kaggle.com/harlfoxem/housesalesprediction/discussion/207885)
-* <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+* Blog [Seja um Data Scientist](https://sejaumdatascientist.com/eu-criei-esse-projeto-e-consegui-meu-primeiro-emprego-como-data-scientist/)
+* Dataset Rossmann Store Sales from [Kaggle](https://www.kaggle.com/c/rossmann-store-sales/overview)
+* Variables meaning on [Kaggle](https://www.kaggle.com/c/rossmann-store-sales/data)
+
+----
+## Contacte me:
+[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/marianaborgal/)
+[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=mailto:mariana.albor@gmail.com)](mailto:mariana.albor@gmail.com)
