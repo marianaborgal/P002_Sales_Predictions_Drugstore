@@ -46,5 +46,6 @@ def rossmann_prediction():
 if __name__ == '__main__':
     find_port = os.environ.get('PORT', 5000)
     app.run(host='0.0.0.0', port=find_port, debug=True)
+    #app.run(host='192.168.0.7', port=find_port, debug=True)
 
 
