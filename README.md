@@ -33,7 +33,7 @@ Rossmann is a pharmacy chain that operates over 3,000 stores in 7 European count
 Variable | Definition
 ------------ | -------------
 |store | unique ID for each store|
-|days_of_week | weekday, strating 1 as Monday. |
+|days_of_week | weekday, starting 1 as Monday. |
 |date | date that the sales occurred|
 |sales | amount of products or services sold in one day  |
 |customers | number of customers |
