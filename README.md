@@ -35,7 +35,7 @@ Variable | Definition
 |store | unique ID for each store|
 |days_of_week | |
 |date | date that the sales occurred|
-|sales | number of sales |
+|sales | amount of products or services sold in one day  |
 |customers | number of customers |
 |open | wether the store was open (1) or closed (0)|
 |promo | wether the store was participating on a promotion (1) or not (0)|
