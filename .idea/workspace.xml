@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e09b7f30-dfa3-432e-8a21-56cdd04cef50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sales_predictions - Copia/handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_sales_predictions - Copia/handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/Sales_Predictions_c10_Model_Deploy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Sales_Predictions_c10_Model_Deploy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/Sales_Predictions_c02_s04_EDA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/Sales_Predictions_c02_s04_EDA-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/Sales_Predictions_c01_s04_EDA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Sales_Predictions_c01_s04_EDA.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parameters/rescaling_competition_distance.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/rescaling_competition_distance.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parameters/rescaling_year.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/rescaling_year.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/rossmann_telegram_api" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
@@ -42,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/rossmann_telegram_api" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
