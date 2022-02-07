@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_cycle_01/app_sales_predictions" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_cycle_01/rossmann_telegram_api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app_sales_predictions" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app_sales_predictions - Copia" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/rossmann_telegram_api" vcs="Git" />
