@@ -6,7 +6,7 @@ from rossmann.Rossmann_Prep import Rossmann_Prep # from folder.file import class
 
 
 # loading model
-model = pickle.load(open('../model/model_xgb_tuned_c02.pkl', 'rb'))
+model = pickle.load(open('model/model_xgb_tuned_c02.pkl', 'rb'))
 
 # initializing API
 app = Flask(__name__)

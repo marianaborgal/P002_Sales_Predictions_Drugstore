@@ -8,14 +8,12 @@ import datetime
 
 class Rossmann_Prep(object):
     def __init__(self):
-        self.home_path = 'C:/Users/maria/Documents/repositories/P002_Sales_Predictions_Drugstore/'
-        #C:\Users\maria\Documents\repositories\P002_Sales_Predictions_Drugstore\parameters
+        self.home_path = ''
         self.rescaling_competition_distance = pickle.load(open(self.home_path + 'parameters/rescaling_competition_distance_c02.pkl', 'rb'))
         self.rescaling_competition_open_timeinmonths = pickle.load(open(self.home_path + 'parameters/rescaling_competition_open_timeinmonths_c02.pkl', 'rb'))
         self.rescaling_promo2_since_timeinweeks = pickle.load(open(self.home_path + 'parameters/rescaling_promo2_since_timeinweeks_c02.pkl', 'rb'))
         self.rescaling_year = pickle.load(open(self.home_path + 'parameters/rescaling_year_c02.pkl', 'rb'))
         self.encoding_store_type = pickle.load(open(self.home_path + 'parameters/encoding_store_type_c02.pkl', 'rb'))
-
 
 
     def data_cleaning(self, df1):
